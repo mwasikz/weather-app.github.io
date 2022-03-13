@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
                     locationTimezone.innerHTML = `<img src="icons/flags/${country}.png">` + data.name;
 
 
-                    weatherIcon.innerHTML = `<img src="icons/${icon}.svg">`;
+                    weatherIcon.innerHTML = `<img src="icons/${icon}.svg" height="200px" width="200px">`;
                     windSpeedInfo.textContent = speed + " mph";
                     humidityInfo.textContent = humidity + " %";
                     sunriseInfo.textContent = "Sunrise " + formattedSunriseTime;
