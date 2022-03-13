@@ -12,9 +12,10 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right, #780206, #061161);
+    background-image: linear-gradient(to bottom, #051937, #005181, #00909f, #00ce7b, #b0ff00);
     font-family: 'Hubballi' ;
     color: whitesmoke;
+    padding: 10px;
 }
 .location,
 .temperature {
@@ -23,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 
 }
 .temperature {
