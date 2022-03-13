@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     let temperatureDescription = document.querySelector('.temperatureDescription');
     let temperatureDegree = document.querySelector('.temperatureDegree');
     let locationTimezone = document.querySelector('.locationTimezone');
-    let locationIcon = document.querySelector('.locationIcon');
+    let weatherIcon = document.querySelector('.weatherIcon');
     let windSpeedInfo = document.querySelector('.windSpeedInfo');
     let humidityInfo = document.querySelector('.humidityInfo');
     let sunriseInfo = document.querySelector('.sunriseInfo');
@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = description;
                     locationTimezone.textContent = data.name + ", " + country;
-                    locationIcon.innerHTML = `<img src="icons/${icon}.png">`;
+                    weatherIcon.innerHTML = `<img src="icons/${icon}.png">`;
                     windSpeedInfo.textContent = speed + " mph";
                     humidityInfo.textContent = humidity + " %";
                     sunriseInfo.textContent = "Sunrise " + formattedSunriseTime;
