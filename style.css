@@ -30,8 +30,12 @@ body {
 	flex-direction: row;
 	padding-bottom: 10px;
 	font-weight: lighter;
-	
-
+}
+.location {
+	padding-bottom: 80px;
+}
+.location h1 {
+	font-size: 25px;
 }
 .temperature {
 	flex-direction: column;

@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
 
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = description;
-                    locationTimezone.textContent = data.name;
+                    locationTimezone.innerHTML = `<img src="icons/flags/${country}.png">` + data.name;
 
 
                     weatherIcon.innerHTML = `<img src="icons/${icon}.svg">`;
@@ -62,6 +62,10 @@ window.addEventListener('load', () => {
                     humidityInfo.textContent = humidity + " %";
                     sunriseInfo.textContent = "Sunrise " + formattedSunriseTime;
                     sunsetInfo.textContent = "Sunset " + formattedSunetTime;
+
+
+
+
                 })
 
 
