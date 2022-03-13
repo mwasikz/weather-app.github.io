@@ -38,6 +38,7 @@ body {
 }
 .location h1 {
 	font-size: 25px;
+	letter-spacing: 2px;
 }
 .temperature {
 	flex-direction: column;
@@ -56,6 +57,7 @@ body {
 
 .degreeSection h2 {
 	font-size: 50px;
+	letter-spacing: 4px;
 }
 
 p {
