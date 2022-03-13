@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
 
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = description;
-                    locationTimezone.textContent = data.name + ", " + country;
+                    locationTimezone.textContent = data.name;
 
 
                     weatherIcon.innerHTML = `<img src="icons/${icon}.svg">`;
