@@ -95,10 +95,11 @@ p {
 
 .locationTimezone {
 	margin-top: 80px;
-	margin-left: 70px;
-	font-size: 40px;
-	align-items: center;
+	margin-left: 80px;
+	font-size: 10px;
+	
 }
+
 .sunriseContainer h4 {
 		font-size: 20px;
 		font-weight: lighter;
@@ -107,4 +108,6 @@ p {
 		font-size: 20px;
 		font-weight: lighter;
 }
-
+.weatherIcon {
+	margin-left: -5;
+}

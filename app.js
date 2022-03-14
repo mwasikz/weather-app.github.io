@@ -31,37 +31,38 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temp, humidity, feels_like } = data.main;
+                    const { temp, humidity } = data.main;
                     const { country, sunrise, sunset } = data.sys;
                     const { icon, description } = data.weather[0];
                     const { speed } = data.wind;
+
 
                     const sunriseTime = new Date(sunrise * 1000);
                     const sunriseHour = sunriseTime.getHours();
                     const sunriseMinute = sunriseTime.getMinutes();
 
-                    const formattedSunriseTime = sunriseHour + ':' + sunriseMinute + ' AM';
-                    console.log(formattedSunriseTime);
+
+                    const formattedSunriseTime = `${sunriseHour} : ${sunriseMinute} AM`;
+
 
                     const sunsetTime = new Date(sunset * 1000);
                     const sunsetHour = sunsetTime.getHours();
                     const sunsetMinute = sunriseTime.getMinutes();
 
-                    const formattedSunetTime = sunsetHour + ':' + sunsetMinute + ' PM';
-                    console.log(formattedSunetTime);
 
+                    const formattedSunetTime = `${sunsetHour} : ${sunsetMinute} PM`;
 
 
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = description;
-                    locationTimezone.innerHTML = `<img src="icons/flags/${country}.png">` + data.name;
+                    locationTimezone.innerHTML = `<img src="icons/flags/${country}.png"> ${data.name}`;
 
 
                     weatherIcon.innerHTML = `<img src="icons/${icon}.svg" height="200px" width="200px">`;
-                    windSpeedInfo.textContent = speed + " mph";
-                    humidityInfo.textContent = humidity + " %";
-                    sunriseInfo.textContent = "Sunrise " + formattedSunriseTime;
-                    sunsetInfo.textContent = "Sunset " + formattedSunetTime;
+                    windSpeedInfo.textContent = `${speed} mph`;
+                    humidityInfo.textContent = `${humidity} %`;
+                    sunriseInfo.textContent = `Sunrise ${formattedSunriseTime}`;
+                    sunsetInfo.textContent = `Sunset ${formattedSunetTime}`;
 
 
 
