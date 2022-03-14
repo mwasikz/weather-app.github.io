@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
             longitude = position.coords.longitude;
             latitude = position.coords.latitude;
 
-            apiKey = '0b3503e3d2c3fadb2820a171701c1963';
+            const apiKey = '0b3503e3d2c3fadb2820a171701c1963';
             const proxy = "https://cors-anywhere.herokuapp.com/"
 
             const apiCall = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
