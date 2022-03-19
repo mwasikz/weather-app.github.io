@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
 
             const apiKey = '0b3503e3d2c3fadb2820a171701c1963';
             //const proxy = "https://cors-anywhere.herokuapp.com/"
-            const proxy = "https://alloworigin.com/get?url="
+            const proxy = "https://crossorigin.me/"
 
             const apiCall = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
